@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<!-- <link href="style.css" rel="stylesheet"> -->
+<title>Grocery</title>
+</head>
+<body>
+	<div id="fruit_table">
+		<table>
+		 	<tr><th>IMAGE</th><th>NAME</th><th>Rs/KG</th><th>QUANTITY</th></tr>
+		 	<tr>
+             <td>Alfreds Futterkiste</td>
+    			<td>Maria Anders</td>
+   				 <td>Germany</td>
+   				 <td><input type="number" id="qty" min="0"></td>
+ 			 </tr>
+ 			 <tr>
+ 			 <td></td>
+    			<td></td>
+   				 <td></td>
+   				 <td>total:<label id="total"></label></td>
+   				 </tr>
+		</table>
+		
+	</div>
+	<div id="cart">
+		<button id="addtocart" ng-click="addtocart()"><b>AddToCart</b></button>
+		<button id="checkout" ng-click="checkout()"><b>CheckOut</b></button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html ng-app='Angular_cart'>
+<head>
+<meta charset="ISO-8859-1">
+<link href="style.css" rel="stylesheet">
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.js"></script>
+<!-- <script src="lib/angular-route.min.js"></script> -->
+<!-- <script src="lib/angular-route.min.js"></script> -->
+<script src="app.js"></script>
+<script src="Controller.js"></script>
+
+<script type="text/javascript" src=lib/bootstrap.min.css></script>
+<script type="text/javascript" src=lib/bootstrap.min.js></script>
+
+<script type="text/javascript" src=lib/bootstrap.js></script>
+<!-- <script type="text/javascript" src=lib/jquery-1.4.1.min.js></script> -->
+
+<script type="text/javascript" src=lib/jquery-3.2.1.min.js></script>
+<!-- <script type="text/javascript" src=lib/bootstrap.min.js></script>
+<script type="text/javascript" src=lib/bootstrap.js></script>
+<script type="text/javascript" src=/lib/jquery-ui.css></script>
+<script type="text/javascript" src=/lib/jquery-ui.min.js></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+<title>Shopping cart</title>
+</head>
+<body  ng-controller="routeController">
+	<div id="head_row">
+		<label><h2><b>SHOPPING CART</b></h2></label>
+	</div>
+ <!-- <div class="nav-tabs" ng-controller="routeController" >
+	      <button class="tablinks" ng-click="openCity0('F')" id="fruit"><b>FRUITS</b></button>
+		  <button class="tablinks" ng-click="openCity1('V')" ><b>VEGITABLES</b></button>
+		  <button class="tablinks" ng-click="openCity2('G')"><b>GROCERY</b></button>
+		  <button class="tablinks" ng-click="openCity3('B')"><b>BREWAGES</b></button>
+		  <input type="text" id="content" placeholder="search"/><button id="search" ng-click=search()>search</button>
+    </div> -->
+    <header class="top" role="header">
+	<div class="container">
+	
+	<nav class="navbar-collapse collapse" role="navigation">
+		<ul class="navbar-nav nav">
+			<li><a href="#/">home</a></li>
+			<li><a href="#fruits">FRUITS</a></li>
+			<li><a href="#Vegitable">VEGITABLES</a></li>
+			<li><a href="#Grocery">GROCERY</a></li>
+			<li><a href="#BREWAGES">BREWAGES</a></li>
+		</ul>
+	
+	</nav>
+	</div>
+	</header>
+    <div ng-view> 
+    
+    </div>
+       
+    <!-- <script type="text/javascript">
+         var app = angular.module('ngRoutingDemo', ['ngRoute']);
+        app.config(['$loginController', function ($routeProvider) {
+
+            $routeProvider.when('/', {
+                controller: 'loginController',
+                templateUrl: '/fruits.html',
+            }).when('/fruits', {
+                templateUrl: '/vegitable.html',
+                controller: 'studentController'
+            }).otherwise({
+                redirectTo: "/"
+            });
+        }]);
+
+        app.controller("loginController", function ($scope, $locationProvider) {
+
+            $scope.openCity = function () {
+
+                //// write authentication code here..
+                $location.path('/fruits/') //'/'+username+''
+            };
+
+        });
+
+        app.controller("studentController", function ($scope) {
+
+            $scope.username = "fruit";
+        });
+
+
+    </script> -->
+
+      
+   
+</body>
+</html>

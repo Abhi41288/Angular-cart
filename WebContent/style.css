@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+#head_row{
+	background-color: aqua;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#addtocart{
+	
+	float: right;
+	width: 12em;
+	 color: threeddarkshadow; 
+	 height: 3em;
+	
+}
+#checkout{
+	
+	float: right;
+	width: 12em;
+	 color: threeddarkshadow; 
+	 height: 3em;
+}
+#proceedtopay{
+	
+	float: right;
+	width: 12em;
+	 color: threeddarkshadow; 
+	 height: 3em;
+}
+
+.tablinks{
+	width: 12em;
+	 color: threeddarkshadow; 
+	 height: 3em;
+}
